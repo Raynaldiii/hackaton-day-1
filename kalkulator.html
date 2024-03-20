@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="xxl:w-[1400px] largePc:w-[1250px] h-[800px] tab:h-[850px] mobile:h-[1050px] my-14 xxl:ml-[280px] miniPc:ml-[250px] small:ml-[140px] xl:ml-[16px]" style="background-color: rgb(255, 246, 239); background-image: url(&quot;background-calc.svg&quot;); background-position: left bottom; background-repeat: no-repeat; background-size: auto; border-radius: 30px;">
+        <div class="pt-11 px-10 tab:pt-4 mobile:pt-8 mobile:px-0 flex flex-row">
+            <div class="w-[450px] mobile:hidden">
+                <p class="landing-page calc-kpr__title-kalkulator">Kalkulator KPR</p>
+                <img src="Rectangle.png" alt="Rectangle Image" class="w-full" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="grid mobile:grid-cols-2 grid-cols-2 gap-4 my-5 w-[774px] pl-10 -mt-11 mobile:mt-0">
+                <div class="">
+                    <p class="font-bold text-xl text-[#292929] hidden mobile:block">Kalkulator KPR</p>
+                </div>
+                <br>
+                <div class="grid grid-rows-1">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2 text-[#292929] font-semibold">
+                            <label class="label-input-txtbox">Harga Properti</label>
+                            <div>
+                                <div class="textbox-label__wrapper">
+                                    <span class="textbox-label__labelCurrency text-[#777777] text-xs font-bold">Rp</span>
+                                    <div class="w-full place-self-center py-2 pl-2.5">
+                                        <input type="text" inputmode="decimal" name="hargaRumah" class="textbox-label__currency" placeholder="0" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="text-[#292929] font-semibold">
+                                <label class="label-input-txtbox">Jumlah Pinjaman</label>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex flex-row gap-3">
+                                    <div class="textbox-label__wrapperDisabled">
+                                        <span class="textbox-label__labelCurrency text-[#777777] text-xs font-bold">Rp</span>
+                                        <div class="w-full place-self-center py-2 pl-2.5">
+                                            <input type="text" disabled="" placeholder="" name="jumlahPinjaman" maxlength="3" id="" class="textbox__shape__withoutShadow textbox__shape__disablePadding textbox__color__bg__transparent textbox__color__border__none textbox__color__placeholder__gray" autocomplete="new-password" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col gap-2 text-[#292929] font-semibold">
+                                <label class="label-input-txtbox">Uang Muka</label>
+                                <div>
+                                    <div class="textbox-label__wrapper">
+                                        <span class="textbox-label__labelCurrency text-[#777777] text-xs font-bold">Rp</span>
+                                        <div class="w-full place-self-center py-2 pl-2.5">
+                                            <input type="text" inputmode="decimal" name="dp" class="textbox-label__currency" placeholder="0" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="landing-page calc-kpr__interest-info mobile:hidden">Minimal 5% dari harga properti </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="text-[#292929] font-semibold">
+                                <label class="label-input-txtbox">Masa Kredit Fix</label>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex flex-row gap-3">
+                                    <div class="textbox-label__wrapperDisabled">
+                                        <div class="textbox-label__textboxWrapper">
+                                            <div>
+                                                <input type="text" disabled="" placeholder="" name="masaKreditFix" maxlength="3" id="" class="textbox__shape__withoutShadow textbox__shape__disablePadding textbox__color__bg__transparent textbox__color__border__none textbox__color__placeholder__gray" autocomplete="new-password" value="0 Tahun">
+                                            </div>
+                                        </div>
+                                        <span class="textbox-label__labelRightWrapper">Tahun</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 mt-3 mobile:grid-cols-2">
+                        <div class="grid grid-rows-1 gap-2">
+                            <div class="text-[#292929] font-semibold">
+                                <label class="label-input-txtbox">Suku Bunga</label>
+                            </div>
+                            <div class="-mb-2 mobile:w-[150px] max-w-[233px]">
+                                <div class="dropdown__wrapper">
+                                    <button class="dropdown__listboxButton" type="button" aria-haspopup="listbox" aria-expanded="false" data-headlessui-state="">
+                                        <p class="dropdown__value" title="Pilih Program Suku Bunga">Pilih Program Suku Bunga</p>
+                                        <img class="dropdown__arrowDown" src="arrow-down.svg" alt="dropdown">
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="landing-page calc-kpr__interest-info"></p>
+                        </div>
+                        <div class="grid grid-rows-1 gap-2">
+                            <div class="text-[#292929] font-semibold">
+                                <label class="label-input-txtbox">Nominal Suku Bunga</label>
+                            </div>
+                            <div>
+                                <div class="textbox-label__wrapperDisabled">
+                                    <div class="textbox-label__textboxWrapper">
+                                        <input class="textbox-label__currency" placeholder="0" rightlabel="%" name="fixedRate" disabled="" inputmode="numeric" value="0">
+                                    </div>
+                                    <span class="textbox-label__labelRightWrapper">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 flex-shrink-0">
+                            <div class="text-[#292929] font-semibold">
+                                <label class="label-input-txtbox">Lama Pinjaman</label>
+                            </div>
+                            <div class="relative">
+                                <div class="w-full">
+                                    <div class="flex flex-row gap-3">
+                                        <div class="textbox-label__wrapperDisabled">
+                                            <div class="textbox-label__textboxWrapper">
+                                                <input type="text" disabled="" placeholder="" name="jangkaWaktu" maxlength="2" id="" class="textbox__shape__withoutShadow textbox__shape__disablePadding textbox__color__bg__transparent textbox__color__border__none textbox__color__placeholder__gray" autocomplete="new-password" value="">
+                                            </div>
+                                            <span class="textbox-label__labelRightWrapper">Tahun</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid mobile:grid-cols-1 grid-cols-none grid-rows-none w-[730px] mobile:w-[300px] tab:w-[350px] h-[34px] mt-8 mobile:mt-10">
+                        <p class="landing-page calc-kpr__notes">*Catatan: Perhitungan ini adalah hasil perkiraaan aplikasi KPR secara umum dengan menggunakan jangka waktu suku bunga 3 tahun. Data perhitungan di atas dapat berbeda dengan perhitungan bank. Untuk perhitungan yang akurat, silahkan hubungi kantor cabang kami.</p>
+                        <div class="flex place-self-end w-[146px] h-[48px] flex-shrink-0 -mt-1">
+                            <button type="button" disabled="" class="group flex items-center justify-center p-0.5 text-center relative focus:z-10 focus:outline-none cursor-not-allowed opacity-50 text-white border border-transparent enabled:hover:bg-cyan-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2 bg-[#1078CA] disabled:bg-[#EAEBEB] disabled:text-[#B5B6B6] font-bold" paddingsize="padding-0">
+                                <span class="flex items-center transition-all duration-200 rounded-md text-sm px-4 py-2">Lihat Kalkulasi</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
